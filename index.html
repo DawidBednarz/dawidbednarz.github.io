@@ -5,70 +5,73 @@
 	  	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	  	<title>TaideKettu Homepage</title>
 		<style>
+		
 			body {
-			background-color: rgb(24, 24, 24);
-			font-family:'MS Gothic';
+				background-image: url('Page-Content/SpaceBackground.png');
+				background-color: rgb(24, 24, 24);
+				font-family:'MS Gothic';
 			}
 
 			p {
-  			color: white;
+				color: white;
 			}
 			
 			#wrapper {
- 			margin-left:auto;
-    			margin-right:auto;
-   			width:960px;
+				margin-left:auto;
+				margin-right:auto;
+				width:960px;
 			}
 
 			table {
-		  	style="white-space: nowrap"
-		  	border-collapse: collapse;
-		  	width: 80%;
-		  	box-shadow: 0px 0px 10px 2px #000000;
-			}	
+				style="white-space: nowrap"
+				border-collapse: collapse;
+				width: 80%;
+				box-shadow: 0px 0px 10px 2px #000000;
+			}
+			
 		 	td, th {
-		  	border: 1px solid #dddddd;
-		  	text-align: left;
-		  	padding: 12px;
-			}	
+				border: 1px solid #dddddd;
+				text-align: left;
+				padding: 12px;
+			}
+			
 		  	th {
-		  	background-color: #0a0a0a;
+				background-color: #0a0a0a;
 			}
+			
 		  	td {
-		  	background-color: #1a1a1a;
+				background-color: #1a1a1a;
 			}
+			
 		  	table.center {
-  		  	margin-left: auto; 
-  		  	margin-right: auto;
+				margin-left: auto; 
+				margin-right: auto;
 			}
 
 			.butt {
-		  	box-shadow: 0px 0px 10px 2px #000000;
-  		  	border: 1px solid white ;
-   		  	background-color: #0a0a0a;
-   		  	height:32px;
-  		  	width:380px;
-   		  	cursor:pointer;
-			color:white;
+				box-shadow: 0px 0px 10px 2px #000000;
+				border: 1px solid white ;
+				background-color: #0a0a0a;
+				height:32px;
+				width:380px;
+				cursor:pointer;
+				color:white;
 			}
+			
 			.butt:hover {
- 		  	background-color: crimson;
-   		  	color:white;
+				background-color: crimson;
+				color:white;
 			}
 
 			a {
-			color:darkcyan;
+				color:darkcyan;
 			}
+			
 			a:hover {
-			color:crimson
+				color:crimson
 			}
+			
 		</style>
-
- 		<style>
-			body {
- 			background-image: url('Page-Content/SpaceBackground.png');
-			}
-		</style> 
 
 			<div id="left">		</div>
 		 	<div id="right">	</div>
@@ -76,125 +79,145 @@
 		 	<div id="bottom">	</div>
 
 		<style>
+		
 		  	#top, #bottom, #left, #right {
-		  	background: white;
-		  	position: fixed;
+				background: white;
+				position: fixed;
 			}
+			
 		 	#left, #right {
-		  	top: 10px; bottom: 10px;
-		  	width: 1px;
+				top: 10px; bottom: 10px;
+				width: 1px;
 			}
-		  	#left { left: 10px; }
-		  	#right { right: 10px; }
-		  	#top, #bottom {
-		  	left: 10px; right: 10px;
-		  	height: 1px;
+			
+		  	#left { 
+				left: 10px; 
 			}
-		  	#top { top: 10px; }
-		  	#bottom { bottom: 10px; }
+			
+		  	#right { 
+				right: 10px; 
 			}
+			
+			#top, #bottom {
+				left: 10px; right: 10px;
+				height: 1px;
+			}
+			
+		  	#top { 
+				top: 10px; 
+			}
+			
+		  	#bottom { 
+				bottom: 10px; 
+				}
+			
 		</style>
+		
 			<!--https://aleclownes.com/2017/02/01/crt-display.html-->
-		<style>				
+			
+		<style>	
+		
 			.crt::before {
-		  	content: " ";
-		  	display: block;
-		  	position: fixed;
-		  	top: 0;
-		  	left: 0;
-		  	bottom: 0;
-		  	right: 0;
-		  	background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-		  	z-index: 2;
-		  	background-size: 100% 2px, 3px 100%;
-		  	pointer-events: none;
+				content: " ";
+				display: block;
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+				z-index: 2;
+				background-size: 100% 2px, 3px 100%;
+				pointer-events: none;
 			}
 
 			@keyframes flicker {
-		  	0% {
-		  	opacity: 0.27861;
-		  	}
-		  	5% {
-		  	opacity: 0.34769;
-		  	}
- 		 	10% {
-		  	opacity: 0.23604;
-		  	}
-		  	15% {
-		  	opacity: 0.90626;
-		  	}
-		  	20% {
-		  	opacity: 0.18128;
-		  	}
-		  	25% {
-		  	opacity: 0.83891;
-		  	}
-		  	30% {
-		  	opacity: 0.65583;
-		  	}
-		  	35% {
-		  	opacity: 0.67807;
-		 	}
-		  	40% {
-		  	opacity: 0.26559;
-		  	}
-		  	45% {
-		  	opacity: 0.84693;
-		  	}
-		  	50% {
-		  	opacity: 0.96019;
-		  	}
- 		 	55% {
-		  	opacity: 0.08594;
-		  	}
-		  	60% {
-		  	opacity: 0.20313;
-		  	}
-		  	65% {
-		  	opacity: 0.71988;
-		  	}
-		  	70% {
-		  	opacity: 0.53455;
-		  	}
-		  	75% {
- 		 	opacity: 0.37288;
-		  	}
-		  	80% {
- 		 	opacity: 0.71428;
-		  	}
-		  	85% {
-		  	opacity: 0.70419;
-		  	}
- 		 	90% {
-		  	opacity: 0.7003;
-		  	}
-		  	95% {
-		  	opacity: 0.36108;
-		  	}
-		  	100% {
-		  	opacity: 0.24387;
-		  	}
+				0% {
+					opacity: 0.27861;
+				}
+				5% {
+					opacity: 0.34769;
+				}
+				10% {
+					opacity: 0.23604;
+				}
+				15% {
+					opacity: 0.90626;
+				}
+				20% {
+					opacity: 0.18128;
+				}
+				25% {
+					opacity: 0.83891;
+				}
+				30% {
+					opacity: 0.65583;
+				}
+				35% {
+					opacity: 0.67807;
+				}
+				40% {
+					opacity: 0.26559;
+				}
+				45% {
+					opacity: 0.84693;
+				}
+				50% {
+					opacity: 0.96019;
+				}
+				55% {
+					opacity: 0.08594;
+				}
+				60% {
+					opacity: 0.20313;
+				}
+				65% {
+					opacity: 0.71988;
+				}
+				70% {
+					opacity: 0.53455;
+				}
+				75% {
+					opacity: 0.37288;
+				}
+				80% {
+					opacity: 0.71428;
+				}
+				85% {
+					opacity: 0.70419;
+				}
+				90% {
+					opacity: 0.7003;
+				}
+				95% {
+					opacity: 0.36108;
+				}
+				100% {
+					opacity: 0.24387;
+				}
 			}
 
 			.crt::after {
-		  	content: " ";
-		  	display: block;
-		  	position: absolute;
-		  	top: 0;
-		  	left: 0;
-		  	bottom: 0;
-		  	right: 0;
-		  	background: rgba(18, 16, 16, 0.1);
-		  	opacity: 0;
-		  	z-index: 2;
-		  	pointer-events: none;
-		  	animation: flicker 0.15s infinite;
+				content: " ";
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background: rgba(18, 16, 16, 0.1);
+				opacity: 0;
+				z-index: 2;
+				pointer-events: none;
+				animation: flicker 0.15s infinite;
 			}
+
 		</style>
 	</head>
+	
 	<body>
 		<div id="wrapper">
-			<center>
+		<center>
 
 		<br>
 		<p> - --=-==========================================================================================================-=-- - </p>
@@ -262,7 +285,7 @@
 		<img src="Page-Content/Desktop-logo.gif"><br>
 
 		<br>
-			</center>
+		</center>
 
 		<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 		<script>
