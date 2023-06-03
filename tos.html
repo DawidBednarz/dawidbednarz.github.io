@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html class=crt>
+<html>
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-	  	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	  	<link rel="icon" type="image/x-icon" href="page-content/favicon.ico">
 	  	<title>TaideKettu TOS</title>
 		
-		<!-- #wrapper will cause problems later-->
-		<!-- font that is used works well enough to the moment when someone uses option to zoom in, then it fucking shits it self-->
+<!-- font that is used works well enough to the moment when someone uses option to zoom in, then it fucking shits it self-->
 		
 		<style>
 		
+			@font-face {
+				font-family: 'fsex300';
+				src: url(page-content/Fixedsys301.ttf);
+				font-family: "fsex300", "Courier", "monospace";
+			}
+
 			body {
 				background-image: url('Page-Content/SpaceBackground.png');
 				background-color: rgb(24, 24, 24);
-				font-family:'MS Gothic';
+				font-family: "fsex300", "Courier", "monospace";
 			}
 
 			p {
@@ -31,6 +36,7 @@
 				border-collapse: collapse;
 				width: 80%;
 				box-shadow: 0px 0px 10px 2px #000000;
+				font-size:17px;
 			}	
 			
 		 	td, th {
@@ -44,7 +50,7 @@
 			}
 			
 		  	td {
-				background-color: #1a1a1a;
+				background: rgba(21,21,21,0.8)
 			}
 			
 		  	table.center {
@@ -60,6 +66,8 @@
 				width:380px;
 				cursor:pointer;
 				color:white;
+				font-family: "fsex300", "Courier", "monospace";
+				font-size:16px;
 			}
 			
 			.butt:hover {
@@ -75,18 +83,7 @@
 				color:crimson
 			}
 			
-		</style>
-		
-			<!--I had no other fucking place to put this-->
-
-			<div id="left">		</div>
-		 	<div id="right">	</div>
-		 	<div id="top">		</div>
-		 	<div id="bottom">	</div>
-
-		<style>
-		
-		  	#top, #bottom, #left, #right {
+			#top, #bottom, #left, #right {
 				background: white;
 				position: fixed;
 			}
@@ -117,109 +114,13 @@
 				bottom: 10px; 
 				}
 			
-		</style>	
-
-			<!--this fuckign shit brakes moment it is under the same style just leave it as it is, it works-->
-			
-		<style>	
-		
-			.crt::before {
-				content: " ";
-				display: block;
-				position: fixed;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
-				z-index: 2;
-				background-size: 100% 2px, 3px 100%;
-				pointer-events: none;
-			}
-
-			@keyframes flicker {
-				0% {
-					opacity: 0.27861;
-				}
-				5% {
-					opacity: 0.34769;
-				}
-				10% {
-					opacity: 0.23604;
-				}
-				15% {
-					opacity: 0.90626;
-				}
-				20% {
-					opacity: 0.18128;
-				}
-				25% {
-					opacity: 0.83891;
-				}
-				30% {
-					opacity: 0.65583;
-				}
-				35% {
-					opacity: 0.67807;
-				}
-				40% {
-					opacity: 0.26559;
-				}
-				45% {
-					opacity: 0.84693;
-				}
-				50% {
-					opacity: 0.96019;
-				}
-				55% {
-					opacity: 0.08594;
-				}
-				60% {
-					opacity: 0.20313;
-				}
-				65% {
-					opacity: 0.71988;
-				}
-				70% {
-					opacity: 0.53455;
-				}
-				75% {
-					opacity: 0.37288;
-				}
-				80% {
-					opacity: 0.71428;
-				}
-				85% {
-					opacity: 0.70419;
-				}
-				90% {
-					opacity: 0.7003;
-				}
-				95% {
-					opacity: 0.36108;
-				}
-				100% {
-					opacity: 0.24387;
-				}
-			}
-
-			.crt::after {
-				content: " ";
-				display: block;
-				position: absolute;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				right: 0;
-				background: rgba(18, 16, 16, 0.1);
-				opacity: 0;
-				z-index: 2;
-				pointer-events: none;
-				animation: flicker 0.15s infinite;
-			}
-
 		</style>
 		
+			<div id="left">		</div>
+		 	<div id="right">	</div>
+		 	<div id="top">		</div>
+		 	<div id="bottom">	</div>
+	
 		<!--as you can see I copied the code once again, it will cause problems-->
 		
 	</head>
@@ -229,22 +130,20 @@
 
 		<br>
 
-		<a href="./"><input class="butt" type="button" value="<-  HOMEPAGE" /></a><br>
-
 		<br>
-		<p> - --=-==========================================================================================================-=-- - </p>
+		<p> - ----=-=**-**=-=**+**===-===**=**-+-**=****=+=*****************=+=****=**-+-**=**===-===**+**=-=**-**=-=---- - </p>
 		<br>
 		<table style="color:rgb(255, 184, 6)"> <!-- this shit was the easiest to make, yet it felt horrible-->
 			<tr>  
-				<th> // Yap I will create! </th>
+				<th> // YAP I WILL CREATE! </th>
 			</tr>
 			<tr>
 				<td><br>
 				&nbsp; That’s right! You can commission me and I will gladly bring your idea to life if its <br> &nbsp; possible!<br>
 				<br>
-				&nbsp; Below you will find my prices and TOS, if you have a question (or want to commission me) <br> &nbsp; then send me a direct message right away!<br>
+				&nbsp; Below you will find my prices and TOS, if you have a question (or want to <br> &nbsp; commission me) then send me a direct message right away!<br>
 				<br>
-				&nbsp; <b><u>TaideKettu.contact@protonmail.com</u></b> <br>
+				&nbsp; <b><u>Contact: TaideKettu.contact@protonmail.com</u></b> <br>
 				<br></td>
 			</tr>
 		</table>
@@ -281,7 +180,7 @@
 					<br>
        					&nbsp; > Please provide references if you can.<br>
 					<br>
-        				&nbsp; > Bad and / or abusive behaviour will not be tolerated and can lead to your commission <br> &nbsp; being cancelled.<br>
+        				&nbsp; > Bad and / or abusive behaviour will not be tolerated and can lead to your <br> &nbsp; commission being cancelled.<br>
 				  <br>
 				<hr>
 				  <br>
@@ -311,15 +210,15 @@
 					<br>
         				&nbsp; > The artwork may not be used for commercial purposes unless agreed upon otherwise.<br>
 					<br>
-        				&nbsp; > You cannot reproduce or use the artwork commercially, take credit for the creation of <br> &nbsp; the artwork, remove watermarks or alter the artwork without my consent.<br>
+        				&nbsp; > You cannot reproduce or use the artwork commercially, take credit for the creation <br> &nbsp; of the artwork, remove watermarks or alter the artwork without my consent.<br>
 				  <br>
 				<hr>
 				  <br>
     					■ <b>COMMERCIAL RIGHTS</b><br>
 					<br>
-        				&nbsp; > The commercial rights to the artwork may be purchased for 500% of the original price.<br>
+        				&nbsp; > The commercial rights to the artwork may be purchased for 500% of the original <br> &nbsp; price.<br>
 					<br>
-        				&nbsp; > With the commercial rights, you are allowed to use the artwork to make any kind of merch <br> &nbsp; as well as promoting your brand.<br>
+        				&nbsp; > With the commercial rights, you are allowed to use the artwork to make any kind of <br> &nbsp; merch as well as promoting your brand.<br>
 					<br>
         				&nbsp; > Credit is still required for usage of the artwork, even if altered or edited.<br>
 				  <br>
@@ -333,18 +232,18 @@
 					<br>
        					&nbsp; > After completion of a commission I will only facilitate small changes.<br>
 					<br>
-        				&nbsp; > Any great changes that are requested after completion of the commission will come at an <br> &nbsp; extra charge.<br>
+        				&nbsp; > Any great changes that are requested after completion of the commission will come <br> &nbsp; at an extra charge.<br>
 				</td>
 			</tr>
 		</table>
 		<br>
-		<p> - --=-==========================================================================================================-=-- - </p>
+		<p> - ----=-=**-**=-=**+**===-===**=**-+-**=****=+=*****************=+=****=**-+-**=**===-===**+**=-=**-**=-=---- - </p>
 		<br>
 
-		<a href="./"><input class="butt" type="button" value="<-  GO BACK TO OTHER SHIT" /></a><br>
+		<a href="./"><input class="butt" type="button" value="<< GO BACK TO OTHER SHIT" /></a><br>
 
 		<br>
-		<p> - -***********************- - </p>
+		<p> - -*=-**=**+*****+**=**-=*- - </p>
 		<br>
 
 		<img src="Page-Content/Notepad-logo.gif"> 
