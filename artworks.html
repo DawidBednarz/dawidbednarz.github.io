@@ -3,86 +3,105 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	  	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	  	<title>TaideKettu Stuff</title>
+	  	<title>TaideKettu Artworks</title>
 		
 		<style>
 		
 			@font-face {
 				font-family: 'fsex300';
 				src: url(Fixedsys301.ttf);
-				font-family: "fsex300", "Courier", "monospace";
 			}
 
 			body {
-				background-image: url('Page-Content/SpaceBackground.png');
+				background-image: url('index.img/SpaceBackground.png');
 				background-color: rgb(24, 24, 24);
-				font-family: "fsex300", "Courier", "monospace";
+				font-family: "fsex300";
 			}
 
-			p {
-				color: white;
-			}
-			
 			#wrapper {
 				margin-left:auto;
-    			margin-right:auto;
+				margin-right:auto;
 				width:960px;
 			}
+			
+			hr{
+				width: 82%;
+				background-color: #ffffff;
+				height: 2px;
+				border: 0;
+				margin-bottom: 16px;
+				margin-top: 16px;
+			}
 
-			table {
-				style="white-space: nowrap"
+			#faketable {
+				border: 3px double #ccc3b9;
 				border-collapse: collapse;
-				width: 100%;
-				box-shadow: 0px 0px 10px 2px #000000;
-				font-size:17px;
+				text-align: justify;
+				background-color: #FFFFFF;
+				padding: 2.7px;
+				width: 978.7px;
+				color: black;
 			}
-			
-		 	td, th {
-				border: 1px solid #dddddd;
-				text-align: left;
+				
+			#box {
+				border: 3px double #ccc3b9;
+				border-collapse: collapse;
+				box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.3);
+				text-align: justify;
+				transition: 0.2s;
+				background-color: rgba(21,21,21,0.8);
 				padding: 12px;
-			}	
-			
-		  	th {
-				background-color: #0a0a0a;
-			}
-			
-		  	td {
-				background: rgba(20,20,20,0.5)
-			}
-			
-		  	table.center {
-				margin-left: auto; 
-				margin-right: auto;
+				width: 100%;
+				color: white;
+			 }
+			 
+			#box:hover {
+				border: 3px solid #ed114c;
+				background-color: rgba(21,21,21,0.8);
+				border-collapse: collapse;
+				box-shadow: 12px 12px 0px rgba(245, 2, 55, 0.3);
+				text-align: justify;
+				transition: 0.2s;
 			}
 
 			.butt {
-				box-shadow: 0px 0px 10px 2px #000000;
-				border: 1px solid white ;
-				background-color: #0a0a0a;
+				border: 3px double #ccc3b9 ;
+				border-collapse: collapse;
+				box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.3);
+				text-align: center;
+				transition: 0.2s;
+				background-color: #FFFFFF;
 				height:32px;
-				width:380px;
-				cursor:pointer;
-				color:white;
-				font-family: "fsex300", "Courier", "monospace";
+				width:373.5px;
+				margin-bottom: 16px;
+				margin-top: 16px;
+				font-family: "fsex300";
 				font-size:16px;
+				cursor:pointer;
 			}
 			
 			.butt:hover {
-				background-color: crimson;
-				color:white;
+				border: 3px solid #ed114c ;
+				background-color: #ed114c;
+				border-collapse: collapse;
+				box-shadow: 12px 12px 0px rgba(245, 2, 55, 0.3);
+				text-align: center;
+				transition: 0.2s;
+				color:#FFFFFF;
 			}
 
 			a {
-				color:darkcyan;
+				color:#ffb806;
 			}
 			
 			a:hover {
-				color:crimson
+				color:#ed114c;
 			}
 			
 			img:hover {
-				opacity: 0.5;
+				opacity: 0.4;
+				transition: 0.2s;
+				cursor:pointer;
 			}
 			
 			.container .box{
@@ -110,108 +129,88 @@
 		<div id="wrapper">
 			<center>
 
-				<br>
-
-				<br>
+			<br>
 				
-					<p> - ----=-=**-**=-=**+**===-===**=**-+-**=****=+=*****************=+=****=**-+-**=**===-===**+**=-=**-**=-=---- - </p>
+				<hr>
 					
-				<br>
+			<br>
+				
+				<div id="faketable"> // 2D ARTWORKS <span style="float:right;"> - ⌂ X &nbsp </span></div>
 							
-					<table style="color:rgb(255, 184, 6)">
-						<tr>  
-							<th> // 2D ARTWORKS </th>
-						</tr>
-					
-						<td>	
-							<div class="container">
-							
-							<div class="box">
-								<div class="art">
-									<img src="Page-Art/2D/Phantom.png" onclick="window.open(this.src)">
-								</div>
-
-								<div class="art">
-									<img src="Page-Art/2D/WalkHome.png" onclick="window.open(this.src)">
-								</div>
-
-								<div class="art">
-									<img src="Page-Art/2D/WARNING.png" onclick="window.open(this.src)">
-								</div>
+				<div id="box">	
+					<div class="container">
+						<div class="box">
+							<div class="art">
+								<img src="art/2D/Phantom.png" onclick="window.open(this.src)">
 							</div>
-						</td>
-					</table>
 
-				<br>
+							<div class="art">
+								<img src="art/2D/WalkHome.png" onclick="window.open(this.src)">
+							</div>
+
+							<div class="art">
+								<img src="art/2D/WARNING.png" onclick="window.open(this.src)">
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<br>
+							
+			<br>
 				
-					
-					
-				<br>
-				
-					<table style="color:rgb(255, 184, 6)">
-						<tr>  
-							<th> // 3D ARTWORKS </th>
-						</tr>
-						
-						<tr>
-							<td style="color: white">
+				<div id="faketable"> // 3D ARTWORKS <span style="float:right;"> - ⌂ X &nbsp </span></div>
+
+				<div id="box">	
+					<div class="container">
+						<div class="box">
+							<div class="art">
 								damn, nothing here yet... 
-							</td>
-						</tr>
-					</table>
-					
-				<br>
-				
-				<br>
-					
-					<table style="color:rgb(255, 184, 6)">
-						<tr>  
-							<th> // VOXEL ARTWORKS </th>
-						</tr>
-
-						<td>
-							<div class="container">
-
-							<div class="box">
-
-								<div class="art">
-									<img src="Page-Art/Voxel/Lavender_Fields.png" onclick="window.open(this.src)">
-									<img src="Page-Art/Voxel/Sunflowers.png" onclick="window.open(this.src)">
-								</div>
-
-								<div class="art">
-									<img src="Page-Art/Voxel/Earth.png" onclick="window.open(this.src)">
-								</div>
-
-								<div class="art">
-									<img src="Page-Art/Voxel/Corn_Fields.png" onclick="window.open(this.src)">
-									<img src="Page-Art/Voxel/Taiga.png" onclick="window.open(this.src)">
-								</div>
 							</div>
-						</td>
-					</table>
+						</div>
+					</div>
+				</div>
 					
-				<br>
+			<br>
 				
-					<p> - ----=-=**-**=-=**+**===-===**=**-+-**=****=+=*****************=+=****=**-+-**=**===-===**+**=-=**-**=-=---- - </p>
-					
-				<br>
-
-					<a href="./"><input class="butt" type="button" value="<< GO BACK TO HOMEPAGE " /></a><br>
-
-				<br>
+			<br>
 				
-					<p> - -*=-**=**+*****+**=**-=*- - </p>
+				<div id="faketable"> // VOXEL ARTWORKS <span style="float:right;"> - ⌂ X &nbsp </span></div>
 					
-				<br>
+				<div id="box">	
+					<div class="container">
+						<div class="box">
+							<div class="art">
+								<img src="art/Voxel/Lavender_Fields.png" onclick="window.open(this.src)">
+								<img src="art/Voxel/Sunflowers.png" onclick="window.open(this.src)">
+							</div>
 
-					<img src="Page-Content/Notepad-logo.gif"> 
-					<img src="Page-Content/Desktop-logo.gif"><br>
+							<div class="art">
+								<img src="art/Voxel/Earth.png" onclick="window.open(this.src)">
+							</div>
 
-				<br>
+							<div class="art">
+								<img src="art/Voxel/Corn_Fields.png" onclick="window.open(this.src)">
+								<img src="art/Voxel/Taiga.png" onclick="window.open(this.src)">
+							</div>
+						</div>
+					</div>
+				</div>
+					
+			<br>
+				
+				<hr>
+
+				<a href="./"><input class="butt" type="button" value="<< GO BACK TO HOMEPAGE" /></a>
+
+			<br>
 			
+				<a href="https://foxfolf.github.io/" target="_blank" style="text-decoration:none"><p style="color: white"> - -*=-**= B̵o̶r̷d̴e̸r̴ ̴R̷e̷a̶l̴m̷ =**-=*- - </p></a>
+				
+			<br>
+				
 			</center>
-		
+
 			<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
 			<script>
 				kofiWidgetOverlay.draw('taidekettu', {
