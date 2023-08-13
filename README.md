@@ -1,3 +1,3 @@
 # taidekettu.github.io
-Artist page, so cool right 
+■ Freelance artist page, so cool right, find me on bluesky or send me an email
 
