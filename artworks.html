@@ -3,8 +3,8 @@
 	<head>
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 	  	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	  	<title>TaideKettu Blog</title>
-			
+	  	<title>TaideKettu Artworks</title>
+		
 		<style>
 		
 			@font-face {
@@ -23,7 +23,7 @@
 				margin-right:auto;
 				width:960px;
 			}
-						
+			
 			hr{
 				width: 82%;
 				background-color: #ffffff;
@@ -32,38 +32,38 @@
 				margin-bottom: 16px;
 				margin-top: 16px;
 			}
-			
-			.hrblog{
-				width: 100%;
-				background-color: #ffffff;
-				height: 2px;
-				border: 0;
-				margin-bottom: 16px;
-				margin-top: 16px;
+
+			#faketable {
+				border: 3px double #ccc3b9;
+				border-collapse: collapse;
+				text-align: justify;
+				background-color: #FFFFFF;
+				padding: 2.7px;
+				width: 978.7px;
+				color: black;
 			}
-			
+				
 			#box {
-				border: 3px double #FFFFFF;
+				border: 3px double #ccc3b9;
 				border-collapse: collapse;
 				box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.3);
 				text-align: justify;
 				transition: 0.2s;
-				background-color: #0000ff;
+				background-color: rgba(21,21,21,0.8);
 				padding: 12px;
-				width: 77%;
+				width: 100%;
 				color: white;
 			 }
 			 
 			#box:hover {
-				border: 3px solid #0000ff;
-				background-color: #0000ff;
+				border: 3px solid #ed114c;
+				background-color: rgba(21,21,21,0.8);
 				border-collapse: collapse;
-				box-shadow: 12px 12px 0px rgba(0, 31, 255, 0.3);
+				box-shadow: 12px 12px 0px rgba(245, 2, 55, 0.3);
 				text-align: justify;
 				transition: 0.2s;
-				color:white;
 			}
-			
+
 			.butt {
 				border: 3px double #ccc3b9 ;
 				border-collapse: collapse;
@@ -89,69 +89,94 @@
 				transition: 0.2s;
 				color:#FFFFFF;
 			}
+
+			.filter {
+				border: 3px double #ccc3b9 ;
+				border-collapse: collapse;
+				box-shadow: 4px 4px 0px rgba(255, 255, 255, 0.3);
+				text-align: center;
+				transition: 0.2s;
+				background-color: #FFFFFF;
+				height:32px;
+				width: 222px;
+				margin-bottom: 16px;
+				margin-top: 16px;
+				font-family: "fsex300";
+				font-size:16px;
+				cursor:pointer;
+			}
+			
+			.filter:hover {
+				border: 3px solid #ed114c ;
+				background-color: #ed114c;
+				border-collapse: collapse;
+				box-shadow: 6px 6px 0px rgba(245, 2, 55, 0.3);
+				text-align: center;
+				transition: 0.2s;
+				color:#FFFFFF;
+			}
 			
 			.palt {
 				color:#ffffff;
 			}
 			
-		</style>	
+			img:hover {
+				opacity: 0.4;
+				transition: 0.2s;
+				cursor:pointer;
+			}
+			
+			.container .box{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.container .box .art{
+				display: flex;
+				flex-direction: column;
+				width: 32.5%;
+			}
+
+			.container .box .art img{
+				width: 100%;
+				padding-bottom: 15px;
+			}
+					
+		</style>
+		
 	</head>
 	
 	<body>
 		<div id="wrapper">
 			<center>
-			
+
 			<br>
-			
-				<hr>
 				
-				<div id="box">
-					<hr class="hrblog">
-					
-						⌜09.08.2023 // Lmao⌟
-						<br><br>
-						I did some changes, removed a lot, I have no idea what Im doing lmao, art is so damn hard and staying sane is the hardest thing to do XMX
-				
-					<hr class="hrblog">
-					
-						⌜09.08.2023 // Taking a brake⌟
-						<br><br>
-						Im taking a brake for a bit, I wont be posting art, I decided to remove my artworks for now too.
-				
-					<hr class="hrblog">
-					
-						⌜17.07.2023 // New stuff to look at!⌟
-						<br><br>
-						I added new categories for my art, now you can switch between them, altough its not the greatest method, it works!
+				<div id="faketable">// My stuff<span style="float:right;"> - ⌂ X &nbsp </span></div>
+							
+				<div id="box">	
+					<div class="container">
+					<!--	<div class="box">
+							<div class="art">
+								<img src="art/2D/D.P. TK B.jpg" onclick="window.open(this.src)">
+							</div>
 
-					<hr class="hrblog">
-					
-						⌜27.06.2023 // Upcoming artworks and small changes⌟
-						<br><br>
-						I came to decision to display Voxel artworks as 3D artworks as it should always be.
+							<div class="art">
+								<img src="art/2D/D.P. TK B.jpg" onclick="window.open(this.src)">
+							</div>
 
-					<hr class="hrblog">
-					
-						⌜16.06.2023 // All pages are finished⌟
-						<br><br>
-						After few long days of hard work I completed the website, to my surprise this version works pretty well on mobile devices, so thats nice, right now I will move to creating art and oh boy I have tons of ideas.
-			
-					<hr class="hrblog">
-					
-						⌜14.06.2023 // First entry⌟
-						<br><br>
-						WOW! Whats this? A blog? People still use these? Yap! And be ready for a lot of entries here, current media platforms are wonky, so its always good to have a backup.
-						<br><br>
-						Website got completely updated, new design, animations and overall better user experience.
-						
-					<hr class="hrblog">
-					
+							<div class="art">
+								<img src="art/2D/D.P. TK B.JPG" onclick="window.open(this.src)">
+							</div>
+						</div>	-->
+					</div>
 				</div>
-				
+
 			<br>
-			
+								
 				<hr>
-				
+
 				<a href="./"><input class="butt" type="button" value="<< GO BACK TO HOMEPAGE" /></a>
 
 			<br>
