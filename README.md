@@ -1,3 +1,4 @@
-# taidekettu.github.io
-■ Freelance artist page, so cool right, find me on bluesky or send me an email
-
+# https://taidekettu.pages.dev
+	
+	\ Portfolio website created for Dawid B. AKA TaideKettu 
+	Website consist of information about me, my art, ways you can commission me, links to my social media and ways to contact me
