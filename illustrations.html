@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<title> TaideKettu | Blog </title>
+		<title> TaideKettu | FoxARTS </title>
 		
 		<style>
 		
@@ -154,14 +154,14 @@
 				right: 0;
 			}
 			
-			a{
+			.a{
 				color: #fdad2d;
 				cursor: crosshair;
 				text-decoration:none;
 				border: 1px solid transparent;
 			}
 			
-			a:hover{
+			.a:hover{
 				color: #dd2d60;
 				cursor: crosshair;
 				text-decoration:none;
@@ -170,33 +170,89 @@
 			}
 			
 			
-			/* blog */
-
+			/* FoxARTS */
 			
-			.blogsection {
-				width:50%;
+			img{
+				border: 1px solid transparent;
+				margin-bottom:3%;
+			}
+			
+			.container .box{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.container .box .art{
+				display: flex;
+				flex-direction: column;
+				width: 32.5%;
+			}
+
+			.container .box .art img{
+				width: 100%;
+
+			}
+			 
+			 .arts {
+				float:right;
+				width:60%;
 				height:80%;
 				margin: 0 auto;
 				overflow-y: scroll;
 				scrollbar-color: #dd2d60 #712d23;
 				border: 2px dotted #f5730a;
-				padding-left:1.5%;
+				padding-left:1%;
+				padding-right:1%;
 				padding-top:0.5%;
+				margin-right: 5%;
 			}
 			
-			.blogs {
-				display:flex;
-				align-items:left;
-				padding-bottom:4%;
-				margin:1%;
+			.butt {
+				border: 2px dotted #f5730a ;
+				background-color: transparent;
+				border-collapse: collapse;
+				color:#fdad2d;
 				font-size: 0.90vw;
+				text-align: center;
+				font-family:"fsex300";
+				height:8%;
+				width:85%;
+				margin-bottom: 8%;
+				margin-top: 8%;
+				margin-left:15%;
+				cursor:crosshair;
+			}
+			
+			.butt:hover {
+				border: 2px solid #e13a5a ;
+				background-color: #e13a5a;
+				border-collapse: collapse;
+				color:#FFFFFF;
+				font-size: 0.90vw;
+				text-align: center;
+				cursor:crosshair;
+			}
+			
+			.filter{
+				float:left;
+				width:25%;
+				margin-left:2%;
+				margin-top:1.5%;
+			}
+			
+			.disclaimer{
+				border: 2px dotted #f5730a ;
+				float:left;
+				font-size: 0.90vw;
+				width:50%;
+				margin-top:25%;
+				margin-left:30%;
+				padding-top:3%;
+				padding-bottom:3%;
+				padding-right:3%;
+				padding-left:3%;
 				color:#f5730a;
-				width:95%;
-			}
-			
-			.blogsdate{
-				font-size: 0.90vw;
-				margin-left:1%;
 			}
 			
 		</style>
@@ -215,57 +271,72 @@
 			
 			<div class="menu">
 			
-				<a style="margin-left: 10%; margin-right: 4%;" href="./">█MainSCREEN█</a>
+				<a class="a" style="margin-left: 10%; margin-right: 4%;" href="./">█MainSCREEN█</a>
 			
-				<a style="margin-left: 4%; margin-right: 4%;" href="./about">█About█</a>
+				<a class="a" style="margin-left: 4%; margin-right: 4%;" href="./about">█About█</a>
 			
-				<a style="margin-left: 4%; margin-right: 4%;" href="./blog">◄Blog►</a>
+				<a class="a" style="margin-left: 4%; margin-right: 4%;" href="./blog">█Blog█</a>
 			
-				<a style="margin-left: 4%; margin-right: 4%;" href="./contact">█Contact█</a>
+				<a class="a" style="margin-left: 4%; margin-right: 4%;" href="./contact">█Contact█</a>
 			
-				<a style="margin-left: 4%; margin-right: 4%;" href="./illustrations">█FoxARTS█</a>
+				<a class="a" style="margin-left: 4%; margin-right: 4%;" href="./illustrations">◄FoxARTS►</a>
 			
-				<a style="margin-left: 4%; margin-right: 10%;" href="./tos">█ToS█</a>
+				<a class="a" style="margin-left: 4%; margin-right: 10%;" href="./tos">█ToS█</a>
 		
 			</div>
 			
 			<div class="undermenulineLEFT"></div> <div class="undermenulineRIGHT"></div>
 			
-			<!-- BLOG SECTION -->
 			
-				<div class="blogsection">
+			<!-- content -->
+			
+			<div class="filter">
+			
+				<a href="./illustrations"><input class="butt" type="button" value=">> ✐ Illustrations <<" /></a>
 				
-					<div class="blogsdate" style="color:#dd2d60; padding-top:4%;">&lt;&lt; DATE &nbsp;HERE &gt;&gt; &nbsp; // &nbsp; TITLE &nbsp; //</div>
-					
-					<div class="blogs" >█Awaiting a new entry_</div>
-					
-				<!-- Actual blogs go here -->
+					<br>
 				
-					<div class="blogsdate" style="color:#dd2d60;">&lt;&lt; 10.02.2024 &gt;&gt; &nbsp; // &nbsp; New look, new style, whole new website! &nbsp; //</div>
+				<a href="./music"><input class="butt" type="button" value=" ♫ ♫ Music ♫ ♫" /></a>
+				
+					<br>
+					<br>
 					
-					<div class="blogs"> 
-
-						Its alive! HAHA, cześć, terve, hola, to anyone who reads this, as Im writing this, my website is still under construction, and Im really happy how its turning out. 
-						
-						<br> &nbsp; <br> 
-						
-						There is still tons of things to be done, some stuff required a lot more time than I thought, mostly because css is old and loves to brake most of stuff that was working
-						without any problem, I think I will be done with everything next week, and I will move to drawing again, this website takes most of time, time which will be pretty rare
-						since the winter brake is coming to an end, good that only 3 months of school left, then, mature exam and oh boy, Im done with this part of my life, finally.
-						
-						<br> &nbsp; <br> 
-						
-						About the art, recently I uploaded my artowrks to e621, its a pretty cool place, mostly yiff, but hey cool nonetheless, as I said on a blog on my old website, Im going to upload 
-						one artwork a month, and I think this is a good strategy and also it doesnt makes me stressed, I can relax and draw and also maintain activity on social media without tuning into
-						a gremlin.
-						
-						<br> &nbsp; <br> 
-						
-						I better get back to work, I hate css, see ya mates.
-						
-					</div>
-
+				<div class="disclaimer">
+					
+					* This is an archive of all of my artworks that were published on my social media which are listed in 'Contact', you are only allowed to share my art, and only with proper credit and link to source. 
+				
 				</div>
+				
+			</div>
+			
+			<div class="arts">
+			
+					<div class="container">
+						<div class="box">
+						
+							<div class="art">
+								<img src="">
+								<img src="">
+							
+							</div>
+
+							<div class="art">
+								<img src="">
+								<img src="art/DB-TaideKettu-Walk home-2023-09-18.jpg">
+								<img src="" >
+							
+							</div>
+
+							<div class="art">
+								<img src="">
+								<img src="art/DB-TaideKettu-WARNING-2023-01-23.jpg">
+							
+							</div>
+							
+						</div>
+					</div>
+				
+			</div>
 	
 		<div class="linebottomLEFT"> &lt;Made for desktop ⌨ viewing &gt; &lt;F12=Tools&gt; &lt;F3=Search&gt; &lt;F5=Reload&gt; &lt;F11=Expand&gt; </div> <div class="linebottomRIGHT"> Last Update : 17/02/2024 </div>
 		
