@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<link rel="icon" type="image/x-icon" href="favicon.ico">
-		<title> TaideKettu | Blog </title>
+		<title> TaideKettu | FoxARTS </title>
 		
 		<style>
 		
@@ -154,14 +154,14 @@
 				right: 0;
 			}
 			
-			a{
+			.a{
 				color: #fdad2d;
 				cursor: crosshair;
 				text-decoration:none;
 				border: 1px solid transparent;
 			}
 			
-			a:hover{
+			.a:hover{
 				color: #dd2d60;
 				cursor: crosshair;
 				text-decoration:none;
@@ -170,33 +170,89 @@
 			}
 			
 			
-			/* blog */
-
+			/* FoxARTS */
 			
-			.blogsection {
-				width:50%;
+			img{
+				border: 1px solid transparent;
+				margin-bottom:3%;
+			}
+			
+			.container .box{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+			}
+
+			.container .box .art{
+				display: flex;
+				flex-direction: column;
+				width: 32.5%;
+			}
+
+			.container .box .art img{
+				width: 100%;
+
+			}
+			 
+			 .arts {
+				float:right;
+				width:60%;
 				height:80%;
 				margin: 0 auto;
 				overflow-y: scroll;
 				scrollbar-color: #dd2d60 #712d23;
 				border: 2px dotted #f5730a;
-				padding-left:1.5%;
+				padding-left:1%;
+				padding-right:1%;
 				padding-top:0.5%;
+				margin-right: 5%;
 			}
 			
-			.blogs {
-				display:flex;
-				align-items:left;
-				padding-bottom:4%;
-				margin:1%;
+			.butt {
+				border: 2px dotted #f5730a ;
+				background-color: transparent;
+				border-collapse: collapse;
+				color:#fdad2d;
 				font-size: 0.90vw;
+				text-align: center;
+				font-family:"fsex300";
+				height:8%;
+				width:85%;
+				margin-bottom: 7%;
+				margin-top: 7%;
+				margin-left:15%;
+				cursor:crosshair;
+			}
+			
+			.butt:hover {
+				border: 2px solid #e13a5a ;
+				background-color: #e13a5a;
+				border-collapse: collapse;
+				color:#FFFFFF;
+				font-size: 0.90vw;
+				text-align: center;
+				cursor:crosshair;
+			}
+			
+			.filter{
+				float:left;
+				width:25%;
+				margin-left:2%;
+				margin-top:1.5%;
+			}
+			
+			.disclaimer{
+				border: 2px dotted #f5730a ;
+				float:left;
+				font-size: 0.90vw;
+				width:50%;
+				margin-top:10%;
+				margin-left:30%;
+				padding-top:3%;
+				padding-bottom:3%;
+				padding-right:3%;
+				padding-left:3%;
 				color:#f5730a;
-				width:95%;
-			}
-			
-			.blogsdate{
-				font-size: 0.90vw;
-				margin-left:1%;
 			}
 			
 		</style>
@@ -215,82 +271,52 @@
 			
 			<div class="menu">
 			
-				<a style="margin-left: 10%; margin-right: 4%;" href="./">█MainSCREEN█</a>
+				<a class="a" style="margin-left: 10%; margin-right: 4%;" href="./">█MainSCREEN█</a>
 			
-				<a style="margin-left: 4%; margin-right: 4%;" href="./about">█About█</a>
+				<a class="a" style="margin-left: 4%; margin-right: 4%;" href="./about">█About█</a>
 			
-				<a style="margin-left: 4%; margin-right: 4%;" href="./blog">◄Blog►</a>
+				<a class="a" style="margin-left: 4%; margin-right: 4%;" href="./blog">█Blog█</a>
 			
-				<a style="margin-left: 4%; margin-right: 4%;" href="./contact">█Contact█</a>
+				<a class="a" style="margin-left: 4%; margin-right: 4%;" href="./contact">█Contact█</a>
 			
-				<a style="margin-left: 4%; margin-right: 4%;" href="./illustrations">█FoxARTS█</a>
+				<a class="a" style="margin-left: 4%; margin-right: 4%;" href="./music">◄FoxARTS►</a>
 			
-				<a style="margin-left: 4%; margin-right: 10%;" href="./tos">█ToS█</a>
+				<a class="a" style="margin-left: 4%; margin-right: 10%;" href="./tos">█ToS█</a>
 		
 			</div>
 			
 			<div class="undermenulineLEFT"></div> <div class="undermenulineRIGHT"></div>
 			
-			<!-- BLOG SECTION -->
 			
-				<div class="blogsection">
+			<!-- content -->
+			
+			<div class="filter">
+			
+				<a href="./illustrations"><input class="butt" type="button" value="✐ Illustrations" /></a>
 				
-					<div class="blogsdate" style="color:#dd2d60; padding-top:4%;">&lt;&lt; DATE &nbsp;HERE &gt;&gt; &nbsp; // &nbsp; TITLE &nbsp; //</div>
-					
-					<div class="blogs" >█Awaiting a new entry_</div>
-					
-				<!-- Actual blogs go here -->
+					<br>
 				
-					<div class="blogsdate" style="color:#dd2d60;">&lt;&lt; 20.02.2024 &gt;&gt; &nbsp; // &nbsp; Its complete now, and coming future &nbsp; //</div>
-					
-					<div class="blogs"> 
-
-						Hey folks, with the page now complete, I thought about writing a new entry. Huff, I can finally sit down after weeks of working and look at my new website. Im happy with how it turned out. 
-						Funny how the simplest things turned out to be the most annoying. I hope that there are, or will be, people who look at my website and read or see my art, and maybe they will get Inspired to create their own website or artwork.
-						
-						<br> &nbsp; <br> 
-						
-						Well, maybe one day there is still time for that. In around 2 months, I'm going to be done with middle school, 4 years of asking myself, "What the hell am I doing here?" and one year of understanding what I learned,
-						and how much I learned. Im facing now the most important exam in my life and a choice about how my life will go. Finding Uni sucks, I'm going to tell you that. Going through tons of pages (with horrible UI, I'm going to add this).
-						and wondering if this is where I want to go, do I really want to do this art thingy, heh?
-						
-						<br> &nbsp; <br> 
-						
-						Maybe it wont be as bad, probably wont be bad at all haha. We need to stay positive, I have a huge hope that my life will get better after going to Uni, at least a bit.
-						
-						<br> &nbsp; <br> 
-						
-						Enjoy the website folks, see ya later!
-						
-					</div>
-					
-				<br><br>
+				<a href="./3d-models"><input class="butt" type="button" value=">> ❒ 3D Models ❑ <<" /></a>
 				
-					<div class="blogsdate" style="color:#dd2d60;">&lt;&lt; 10.02.2024 &gt;&gt; &nbsp; // &nbsp; New look, new style, whole new website! &nbsp; //</div>
+					<br>
+				
+				<a href="./music"><input class="butt" type="button" value="♫ ♫ Music ♫ ♫" /></a>
+
+					<br>
 					
-					<div class="blogs"> 
-
-						Its alive! HAHA, cześć, terve, hola, to anyone who reads this, as Im writing this, my website is still under construction, and Im really happy how its turning out. 
-						
-						<br> &nbsp; <br> 
-						
-						There is still tons of things to be done, some stuff required a lot more time than I thought, mostly because css is old and loves to brake most of stuff that was working
-						without any problem, I think I will be done with everything next week, and I will move to drawing again, this website takes most of time, time which will be pretty rare
-						since the winter brake is coming to an end, good that only 3 months of school left, then, mature exam and oh boy, Im done with this part of my life, finally.
-						
-						<br> &nbsp; <br> 
-						
-						About the art, recently I uploaded my artowrks to e621, its a pretty cool place, mostly yiff, but hey cool nonetheless, as I said on a blog on my old website, Im going to upload 
-						one artwork a month, and I think this is a good strategy and also it doesnt makes me stressed, I can relax and draw and also maintain activity on social media without tuning into
-						a gremlin.
-						
-						<br> &nbsp; <br> 
-						
-						I better get back to work, I hate css, see ya mates.
-						
-					</div>
-
+				<div class="disclaimer">
+					
+					* This is an archive of all of my artworks that were published on my social media, which are listed in 'Contact'. You are only allowed to share my art with proper credit and a link to the source. 
+				
 				</div>
+				
+			</div>
+			
+			<div class="arts">
+			
+				<p style="color:#f5730a; font-size: 0.90vw;">█ERROR: Content is unavailable, please visit the page later_</p>
+				
+			</div>
 	
 		<div class="linebottomLEFT"> &lt;Made for desktop ⌨ viewing &gt; &lt;F12=Tools&gt; &lt;F3=Search&gt; &lt;F5=Reload&gt; &lt;F11=Expand&gt; </div> <div class="linebottomRIGHT"> Last Update : 19/03/2024 </div>
 		
