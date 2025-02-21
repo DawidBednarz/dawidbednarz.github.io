@@ -1,19 +1,237 @@
 <html>
 	<head>
 		<title>Dawid Bednarz | Graphic Designer</title>
-		
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 		<style>
 
 			body {
-				background-color: black;
+				font-family: "Bahnschrift";
+				background-color: #060606;
+				background-repeat: repeat;
+				background-image: url("noise.png");
+				color: #f24711;
+
+			.navbar {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 20px 50px;
+				background-color: transparent; 		/* Make background transparent (you don't deserve it)*/
 				color: white;
+				position: relative; 				/* Ensure it stays on top of other content */
+				z-index: 1; 						/* Bring it above other elements */
 			}
+
+			.logo img {
+				max-width: 100%; 		/* Make the image responsive */
+				height: auto;		 	/* Maintain aspect ratio */
+				width: auto; 			/* Allow width to adjust automatically */
+				max-height: 65px; 		/* Set a maximum height for the logo */
+			}
+
+			/* Media query for mobile devices */
+			@media (max-width: 768px) {
+				.logo img {
+					max-height: 30px; 				/* Set a smaller maximum height for mobile */
+				}
+			}
+
+			.nav-links {
+				display: flex;
+				margin-right: 5%;
+			}
+
+			.nav-button {
+				width: 200px; 			/* Set width */
+				height: 30px; 			/* Set height to make it square */
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-bottom: 25px;
+				margin-top: 25px;
+				color: #f24711;
+				border: none;
+				cursor: pointer;
+				display: flex; 					/* Center text */
+				align-items: center; 			/* Center text vertically */
+				justify-content: center; 		/* Center text horizontally */
+				font-family: "Bahnschrift";     /* I like brownies */
+				border: solid #f24711;
+				background-color: transparent;
+				transition: 0.2s;
+			}
+
+			.nav-button:hover {
+				background-color: #ffffff;
+				border: solid #ffffff;
+				color: #060606;
+				transition: 0.2s;
+			}
+
+			.menu-icon {
+				display: none;
+				font-size: 30px;
+				cursor: pointer;
+				color: #f24711;
+				transition: 0.2s;
+			}
+			
+			.menu-icon:hover {
+				cursor: pointer;
+				color: #ffffff;
+				transition: 0.2s;
+			}
+
+
+			.mobile-menu {
+				display: none; 						/* Hide by default */
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #060606;
+				color: white;
+				display: flex; 						/* Use flexbox for centering */
+				flex-direction: column;
+				align-items: center;				/* I cannot even describe my rage and anger to CSS that is boiling in me, every second I spent with it I think about meeting the creator himself */
+				justify-content: center;
+				z-index: 2; 						/* Ensure it is above other content */
+				opacity: 0; 						/* Start with opacity 0 */
+				transition: opacity 0.3s ease; 		/* Add transition for opacity */
+				pointer-events: none;				/* Prevent interaction when hidden */
+			}
+
+			/* Show the mobile menu when it is active */
+				.mobile-menu.active {
+				opacity: 1; 						/* Fade in */
+				pointer-events: auto; 				/* Allow interaction when visible */
+			}
+
+			.close-icon {
+				font-size: 40px;
+				position: absolute;
+				top: 26px;
+				right: 62px;
+				cursor: pointer;
+			}
+
+			@media (max-width: 960px) {
+				.nav-links {
+					display: none; 				/* Hide nav links on shitphones */
+				}
+				.menu-icon {
+					display: block; 			/* Show menu icon on shitphones (I hate smartphones) */
+				}
+			}
+			
+			.footer {
+				display: flex;
+				justify-content: space-between; 	/* Space out elements */
+				align-items: center;
+				padding: 20px 150px;
+				background-color: transparent; 		/* Make background transparent */
+				color: #f24711;
+				position: relative;
+				bottom: 0;
+				overflow: hidden;
+				white-space: nowrap;				
+			}
+
+			.footer .name, .footer .email, .footer .social {
+				flex: 1; 											/* Allow elements to grow and take equal space */
+				text-align: center; 								/* Center text within each section */
+				
+			}
+
+			@media (max-width: 800px) {
+				.footer {
+					flex-direction: column; 		/* Stack items vertically on mobile */
+					align-items: center;			/* Center items horizontally */
+					text-align: center; 			/* Center text */
+				}
+
+				.footer .name, .footer .email, .footer .social {
+					margin: 10px 0;									/* Add some margin for spacing */
+					text-align: center; 							/* Center text for mobile */
+				}
+			}
+			
+			.link{
+				color: #f27611;
+				text-decoration:none;
+			}
+			
+			.link:hover{
+				color: #ffffff;
+				transition: 0.2s;
+			}
+			
+			/* There is probably a lot of usless shit in this code that does nothing, butttt we need to live with that */
+			
+			/* PS This is 4th version of my website, every version has diffrent style to it, the thing about this one is, that it has proper support for mobile devices and small screens */
+			/* PSS it works fine, nothing special about it, I always avoided it because of huge amount of diffrent resolutions that phones have and the weird way of how they sometimes render websites */
+			/* PSSS If you found spelling mistakes then deal with it, I'm tired and I want brownies - 05.02.2025 */
 			
 		</style>
 	</head>
+	
 	<body>
-	>WORK IN PROGRESS
-	>PLEASE VISIT LATER
-	>THANK YOU <3
+
+		<nav class="navbar">
+			<div class="logo">
+				<img src="logo.png" alt="logo">
+			</div>
+			
+			<div class="nav-links">
+				<button class="nav-button" id="portfolio">Portfolio</button>
+				<button class="nav-button" id="about">About</button>
+			</div>
+			
+			<div class="menu-icon" id="menu-icon">&#9776;</div>
+		</nav>
+
+		<div class="mobile-menu" id="mobile-menu">
+			<div class="close-icon" id="close-icon">&times;</div>
+			<button class="nav-button" id="mobile-portfolio">Portfolio</button>
+			<button class="nav-button" id="mobile-about">About</button>
+		</div>
+
+		<p style="color:red;text-align:center;"> Work in Progress </p>
+		
+		<div class="footer">
+			<div class="name">
+				<p>Dawid Bednarz</p>
+				<p>Graphic Designer</p>
+			</div>
+			<div class="email">
+				<p> <a href="mailto:contact.dawidbednarz@proton.me" class="link" target="_blank">contact.dawidbednarz@proton.me</a> </p>
+			</div>
+			<div class="social">
+				<p>Find me here:</p>
+				<p> <a href="https://bsky.app/profile/taidekettu.bsky.social" class="link" target="_blank">Bluesky</a> </p>
+			</div>		
+		</div>
+		
+		<script>
+	
+			const menuIcon = document.getElementById('menu-icon');
+			const mobileMenu = document.getElementById('mobile-menu');
+			const closeIcon = document.getElementById('close-icon');
+
+			// Show mobile menu when menu icon is clicked
+			menuIcon.addEventListener('click', () => {
+				mobileMenu.classList.add('active'); // Add active class
+			});
+
+			// Hide mobile menu when close icon is clicked
+			closeIcon.addEventListener('click', () => {
+				mobileMenu.classList.remove('active'); // Remove active class
+			});
+
+		</script>
+		
 	</body>
 </html>
+
