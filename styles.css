@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'fsex300';
+    src: url(Fixedsys.ttf);
+}
+
+body {
+    font-family: "fsex300";
+    color:#ffff;
+    line-height: 1.75;
+    background-image: url("abyss.png");
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+.sidenav {
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 32px;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#818181;
+  }
+  
+  .sidenav-head {
+    padding-top: 52px;
+    padding-bottom: 18px;
+    padding-left: 28px;
+    line-height: 36px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    color: #f0710a;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0px;
+    color: #818181;
+  }
+
+  .sidenav-body {
+    flex-grow: 1;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .nav{
+    font-size: 18px;
+    line-height: 48px;
+    padding-left: 28px;
+    display: block;
+    list-style: none;
+    text-decoration: none;
+  } 
+
+  a {
+    text-decoration: none;
+    transition: 0.25s;
+    color: #818181;
+  }
+
+  a:hover {
+    text-decoration: none;
+    transition: 0.25s;
+    color: #f06e22;
+  }
+  
+  .footer-links {
+    position: absolute;
+    bottom: 20px; /* Możesz dostosować tę wartość */
+    width: 100%; /* Aby zajmował pełną szerokość */
+    text-align: center; /* Aby centrować ikony */
+}
+
+.icons {
+    display: flex; /* Umożliwia ułożenie w wierszu */
+    justify-content: flex-start; /* Ustawia ikony do lewej strony */
+    margin-left: 28px; /* Możesz dostosować odstęp od lewej krawędzi */
+}
+
+.medialink {
+    margin-right: 20px; /* Odstęp między ikonami */
+}
+
+.navbar {
+    display: none; /* Domyślnie ukryty na większych ekranach */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0; 
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000; 
+}
+
+.hamburger {
+    cursor: pointer;
+    display: flex; /* Pokaż na mniejszych ekranach */
+    flex-direction: column;
+    justify-content: space-around;
+    height: 24px; 
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: #f0710a;
+    transition: 0.3s; 
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: none; /* Ukryte na początku */
+    position: absolute;
+    top: 60px; /* Odległość od górnego paska */
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Lepsze tło */
+    z-index: 1000;
+    max-height: 0; /* Ukryj na początku */
+    overflow: hidden; /* Zapobiega wyświetlaniu niczego przed animacją */
+    transition: max-height 0.3s ease; /* Płynne przejście */
+}
+
+/* Umożliwia widoczność mobilnego menu */
+.mobile-menu.show {
+    display: block; /* Pokaż menu */
+    max-height: 300px; /* Ustaw maksymalną wysokość, aby mogło się wyświetlić */
+}
+
+/* Media query dla responsywności */
+@media (max-width: 768px) {
+    .sidenav {
+        display: none; /* Ukryj sidebar na mniejszych ekranach */
+    }
+
+    .navbar {
+        display: flex; /* Pokaż navbar na mniejszych ekranach */
+    }
+}
