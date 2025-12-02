@@ -18,7 +18,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.sidenav {
+  .sidenav {
     height: 100%;
     width: 300px;
     position: fixed;
@@ -82,25 +82,27 @@ body {
     color: #f06e22;
   }
   
-  .footer-links {
+.footer-links {
     position: absolute;
-    bottom: 20px; /* Możesz dostosować tę wartość */
-    width: 100%; /* Aby zajmował pełną szerokość */
-    text-align: center; /* Aby centrować ikony */
+    bottom: 20px; 
+    width: 100%;
+    text-align: center;
 }
 
 .icons {
-    display: flex; /* Umożliwia ułożenie w wierszu */
-    justify-content: flex-start; /* Ustawia ikony do lewej strony */
-    margin-left: 28px; /* Możesz dostosować odstęp od lewej krawędzi */
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 28px;
 }
 
 .medialink {
-    margin-right: 20px; /* Odstęp między ikonami */
+    margin-right: 20px;
 }
 
+/* below there are settings for mobile menu */
+
 .navbar {
-    display: none; /* Domyślnie ukryty na większych ekranach */
+    display: none;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px; 
@@ -108,13 +110,12 @@ body {
     top: 0;
     left: 0;
     right: 0; 
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 1000; 
+    background-color: rgba(0, 0, 0, 0.6); 
 }
 
 .hamburger {
     cursor: pointer;
-    display: flex; /* Pokaż na mniejszych ekranach */
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 24px; 
@@ -124,36 +125,37 @@ body {
     width: 30px;
     height: 3px;
     background-color: #f0710a;
-    transition: 0.3s; 
 }
 
-/* Mobile Menu Styles */
 .mobile-menu {
-    display: none; /* Ukryte na początku */
+    display: none;
     position: absolute;
-    top: 60px; /* Odległość od górnego paska */
+    top: 55px;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.9); /* Lepsze tło */
-    z-index: 1000;
-    max-height: 0; /* Ukryj na początku */
-    overflow: hidden; /* Zapobiega wyświetlaniu niczego przed animacją */
-    transition: max-height 0.3s ease; /* Płynne przejście */
+    max-height: 0;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Umożliwia widoczność mobilnego menu */
 .mobile-menu.show {
-    display: block; /* Pokaż menu */
-    max-height: 300px; /* Ustaw maksymalną wysokość, aby mogło się wyświetlić */
+    display: block;
+    max-height: 100%; 
+	height: 100%;
+    width: 100%;
+	z-index: 1;
+    position: fixed;
+    overflow-x: hidden;
 }
 
-/* Media query dla responsywności */
-@media (max-width: 768px) {
+@media (max-width: 1028px) {
     .sidenav {
-        display: none; /* Ukryj sidebar na mniejszych ekranach */
+        display: none;
     }
 
     .navbar {
-        display: flex; /* Pokaż navbar na mniejszych ekranach */
+        display: flex;
     }
 }
+
+/* endo of mobile menu */
