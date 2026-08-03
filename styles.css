@@ -3,84 +3,94 @@
 }
 
 @font-face {
-    font-family: 'fsex300';
-    src: url(Fixedsys.ttf);
+    font-family: 'JosefinSans-VariableFont_wght';
+    src: url(JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+	font-family: "KumarOne";
+	src: url(KumarOne-Regular.ttf) format("truetype");
+	font-display: swap;
 }
 
 body {
-    font-family: "fsex300";
-    color:#ffff;
+    font-family: 'JosefinSans-VariableFont_wght';
+    color:#e3491a;
     line-height: 1.75;
-    background-image: url("abyss.png");
+	background-color:#d3ccc3;
+	background-image: url("image.png");
     background-size: cover; 
     background-position: center;
     background-attachment: fixed; 
     background-repeat: no-repeat;
 }
 
-  .sidenav {
+.sidenav {
     height: 100%;
     width: 300px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 32px;
+    left: 64px;
     overflow-x: hidden;
     padding-top: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(13, 10, 14, 0.80);
     color:#818181;
-  }
+	background-color: rgba(13, 10, 14, 0.80);
+	backdrop-filter: blur(10px); /* blur behind */
+	-webkit-backdrop-filter: blur(10px); /* Safari */	
+}
   
-  .sidenav-head {
+.sidenav-head {
     padding-top: 52px;
     padding-bottom: 18px;
     padding-left: 28px;
     line-height: 36px;
     display: block;
     text-decoration: none;
-  }
+}
   
-  .title {
+.title {
     font-size: 20px;
     font-weight: 400;
     letter-spacing: 4px;
-    color: #f0710a;
-  }
+    color: #d3ccc3;
+}
   
-  .subtitle {
-    font-size: 16px;
+.subtitle {
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: 0px;
     color: #818181;
-  }
+}
 
-  .sidenav-body {
+.sidenav-body {
     flex-grow: 1;
     padding: 0;
     font-size: 18px;
     text-transform: uppercase;
-  }
+}
 
-  .nav{
+.nav{
     font-size: 18px;
     line-height: 48px;
     padding-left: 28px;
     display: block;
     list-style: none;
     text-decoration: none;
-  } 
+} 
 
-  a {
+a {
     text-decoration: none;
     transition: 0.25s;
     color: #818181;
-  }
+}
 
-  a:hover {
+a:hover {
     text-decoration: none;
     transition: 0.25s;
-    color: #f06e22;
-  }
+    color: #e3491a;
+}
   
 .footer-links {
     position: absolute;
@@ -110,7 +120,11 @@ body {
     top: 0;
     left: 0;
     right: 0; 
-    background-color: rgba(0, 0, 0, 0.6); 
+    background-color: rgba(13, 10, 14, 0.80);
+	text-transform: uppercase;
+	background-color: rgba(13, 10, 14, 0.80);
+	backdrop-filter: blur(10px); /* blur behind */
+	-webkit-backdrop-filter: blur(10px); /* Safari */	
 }
 
 .hamburger {
@@ -124,7 +138,7 @@ body {
 .line {
     width: 30px;
     height: 3px;
-    background-color: #f0710a;
+    background-color: #e3491a;
 }
 
 .mobile-menu {
@@ -135,7 +149,9 @@ body {
     right: 0;
     max-height: 0;
 	text-transform: uppercase;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(13, 10, 14, 0.80);
+	backdrop-filter: blur(10px); /* blur behind */
+	-webkit-backdrop-filter: blur(10px); /* Safari */
 }
 
 .mobile-menu.show {
@@ -148,6 +164,118 @@ body {
     overflow-x: hidden;
 }
 
+/* end of mobile menu settings */
+/* The comment above is bullshit, I've redoing the website and I lost where the mobile secction ends, it is somewhere, I ain't touching it */
+
+.layout{
+	display: flex;
+	min-height: 100vh;
+}
+
+/* desktop: sidebar on the left, content on the right */
+.main-panel{
+	margin-left: 332px;   /* 32px left offset (your sidenav) + 300px width */
+	padding: 3% 10%;
+	width: calc(100% - 332px);
+	box-sizing: border-box;
+}
+
+.sidenav{
+	transition: transform .2s ease;
+}
+
+.main-panel .card{
+	background: rgba(13, 10, 14, 0.80);
+	border: 0px solid #d3ccc3;
+	border-radius: 8px;
+	padding: 18px 18px;
+	margin-bottom: 32px;
+	width: 100%;
+	background-color: rgba(13, 10, 14, 0.80);
+	backdrop-filter: blur(10px); /* blur behind */
+	-webkit-backdrop-filter: blur(10px); /* Safari */	
+}
+
+.main-panel .card h2{
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #fff6eb;
+}
+
+.main-panel .card p{
+	margin: 0;
+	color: #fff6eb;
+}
+
+.main-panel .list{
+	font-size: 18px;
+	margin: 0;
+	padding-left: 6px;
+}
+
+.main-panel .list li{
+	margin-bottom: 8px;
+	color: #fff6eb;
+}
+
+.main-panel .list a{
+	color: #fff6eb;
+}
+
+.pill-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.pill{
+	display: inline-block;
+	padding: 8px 12px;
+	border-radius: 10px;                		
+	background: rgba(118, 118, 128,0.20);
+	color: #fff6eb;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.section-title{
+	margin: 6px 0 0 0;
+	font-size: 26px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #bd3d16;
+	font-weight: 600;
+}
+
+/* mobile: hide sidebar, show main full width */
+@media (max-width: 1028px){
+  .main-panel{
+    margin-left: 0;
+    padding: 80px 20px 30px;
+  }
+}
+
+.main-panel > section{
+	background: rgba(0,0,0,0.55);
+	border: 1px solid rgba(255,255,255,0.08);
+	border-radius: 12px;
+	padding: 18px 18px;
+	margin-bottom: 16px;
+}
+
+.main-panel h1, .main-panel h2{
+	margin: 0 0 10px 0;
+	letter-spacing: 2px;
+}
+
+.main-panel p, .main-panel li{
+	color: #e9e9e9;
+}
+
 @media (max-width: 1028px) {
     .sidenav {
         display: none;
@@ -156,6 +284,21 @@ body {
     .navbar {
         display: flex;
     }
+	
+	/* About box (right content) responsiveness */
+	.main-panel{
+		margin-left: 0 !important;
+		width: 100% !important;
+		padding: 80px 20px 30px !important;
+		box-sizing: border-box;
+	}
+
+	/* If your about content is inside a specific card/container */
+	.main-panel > section{
+		width: 100%;
+		box-sizing: border-box;
+		padding: 16px;
+	}
 }
 
-/* endo of mobile menu */
+/* I'm afraid of touching and optimizng this code, one mistake and everything will fucking brake for sure */
